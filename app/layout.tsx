@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./JY/header";
+import Login from "./JY/login";
+import Join from "./JY/join";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header/>
+        <Join/>
       </body>
     </html>
   );
