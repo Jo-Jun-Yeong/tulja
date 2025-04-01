@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "./JY/header";
 import Login from "./JY/login";
 import Join from "./JY/join";
-
+import MyPage from "./JY/myPage";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Join/>
+        <MyPage/>
       </body>
     </html>
   );

@@ -1,0 +1,130 @@
+.con{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    width: 80%;
+    height: 80vh;
+    margin-top: 10vh;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.inner{
+    width:99vh;
+    height: 99vh;
+}
+
+.loginbox{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    width: 70%;
+    height: 70%;
+    margin:auto;
+
+    .inputBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px 0;
+        padding: 10px;
+        background-color: pink;
+        border: 1px solid #d3d3d3;
+        border-radius: 1.5vh;
+        width: 90%;
+        height: 35%;
+
+        .idBox label{
+            outline: none;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            margin-left: 0px;
+        }
+
+        .idBox input{
+            border: 1px solid #d3d3d3;
+             border:none;
+             outline:none;
+             width: 100%;
+             height: 100%;
+             padding:5px;
+             font-size: 20px;
+             transition: font-size 0.3s ease;
+             /* margin:5px; */
+        }
+
+        .pwBox label{
+            background-color: red;
+            outline: none;
+            width: 100%;
+            height: 60px;
+            display: flex;
+        }
+
+        .pwBox input{
+            /* border: 1px solid #d3d3d3; */
+             border:none;
+             outline:none;
+             width: 100%;
+             height: 100%;
+             padding:5px;
+             font-size: 20px;
+             transition: font-size 0.3s ease;
+             /* margin:5px; */
+        }
+
+        .idBox input:focus{
+            font-size: 25px;
+            outline:none;
+        }
+
+        .pwBox input:focus{
+            font-size: 25px;
+            outline:none;
+        }
+
+
+    }
+    
+    .loginButton {
+        justify-content: center;
+        display: flex;
+        background-color:  none;
+        border: 1.5px solid none;
+        height: 40px;
+        width: 90%;
+        margin:5px;
+
+    }
+
+    .loginButton input[type="button"]{
+        width: 100%;
+        background-color: #e7f3ea;
+        border: none;
+        text-decoration: none;
+        font-size: 25px;
+        cursor: pointer;
+        border-radius: 0.5vh;
+        transition: background-color 0.3s;
+    }
+
+    .loginButton input[type="button"]:hover{
+        background-color: #ffff;
+        
+    }
+
+    .loginButton input[type="button"]:active{
+        background-color: #d3d3d3;
+        transform: translateY(2px);
+    }
+}
+
+
+
+
+

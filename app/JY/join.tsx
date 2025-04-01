@@ -20,7 +20,7 @@ export default function Join() {
                 <div style={{ display: "flex", justifyContent: "flex-end" }}>
                     <button>닫기</button>
                 </div>
-                <h4 style={{ textAlign: "center" }}>회원정보 입력</h4>
+                <h4 style={{ textAlign: "center" }}>회원 가입</h4>
                 <hr />
                 <div style={{ width: "100%" }}>
                     <label style={{ display: "flex", alignItems: "center", border: "1px solid #D3D3D3", height: "45px", margin: "10px 0" }}>
@@ -60,13 +60,22 @@ export default function Join() {
                         }} type="text" placeholder="이름" />
                     </label>
                     <label style={{ display: "flex", alignItems: "center", border: "1px solid #D3D3D3", height: "45px", margin: "10px 0" }}>
-                        <div style={{padding: "5px", margin:"5px" }}>📞</div>
+                        <div style={{padding: "5px", margin:"5px" }}>🗓️</div>
                         <input style={{
                             border: "none",
                             backgroundColor: "transparent",
                             width: "100%",
                             padding: "10px"
-                        }} type="tel" placeholder="휴대폰 번호" />
+                        }} type="tel" placeholder="생년월일" />
+                    </label>
+                    <label style={{ display: "flex", alignItems: "center", border: "1px solid #D3D3D3", height: "45px", margin: "10px 0" }}>
+                        <div style={{padding: "5px", margin:"5px" }}>❌</div>
+                        <input style={{
+                            border: "none",
+                            backgroundColor: "transparent",
+                            width: "100%",
+                            padding: "10px"
+                        }} type="tel" placeholder="제외, 알러지음식" />
                     </label>
                 </div>
                 <div style={{display: "flex", alignItems: "center", justifyContent:"center"}}>
