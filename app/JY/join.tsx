@@ -1,86 +1,57 @@
+import styles from "./styleModule/join.module.css"
+
 export default function Join() {
     return (
-        <div style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            height: "100vh",
-            backgroundColor: "red",
-            width: "100%"
-        }}>
-            <div style={{
-                width: "80%",
-                maxWidth: "600px",
-                backgroundColor: "white",
-                padding: "20px",
-                borderRadius: "10px",
-                boxShadow: "0px 4px 6px rgba(0,0,0,0.1)"
-            }}>
-                <div style={{ display: "flex", justifyContent: "flex-end" }}>
+        <div className={styles.container}>
+            <div className={styles.formBox}>
+                <div className={styles.closeButton}>
                     <button>닫기</button>
                 </div>
-                <h4 style={{ textAlign: "center" }}>회원 가입</h4>
+                <h4 className={styles.title}>회원 가입</h4>
                 <hr />
-                <div style={{ width: "100%" }}>
-                    <label style={{ display: "flex", alignItems: "center", border: "1px solid #D3D3D3", height: "45px", margin: "10px 0" }}>
-                        <div style={{padding: "5px", margin:"5px" }}>🔍</div>
-                        <input style={{
-                            border: "none",
-                            backgroundColor: "transparent",
-                            width: "100%",
-                            padding: "10px"
-                        }} type="email" placeholder="아이디(이메일)" />
+                <div className={styles.idInputContainer}>
+                    {/* 아이디 인증 인증번호 */}
+                    <div className={styles.authContainer}>
+                        <label className={styles.idInputLabel}>
+                            <div className={styles.icon}>🔍</div>
+                            <input className={styles.idInputFiled} type="email" placeholder="아이디(이메일)" />
+                            <input type="button" value={"인증번호 전송"} />
+                        </label>
+                        <div>
+
+                        </div>
+                        
+                            <label className={styles.idInputLabel}>
+                                <input className={styles.idInputFiled} placeholder="인증번호" />
+                            <input type="button" value={"인증하기"} />
+                            </label>
+                        
+                    </div>
+
+                    <label className={styles.inputLabel}>
+                        <div className={styles.icon}>🔑</div>
+                        <input className={styles.inputField} type="password" placeholder="비밀번호" />
                     </label>
-                    <label style={{ display: "flex", alignItems: "center", border: "1px solid #D3D3D3", height: "45px", margin: "10px 0" }}>
-                        <div style={{padding: "5px", margin:"5px" }}>🔑</div>
-                        <input style={{
-                            border: "none",
-                            backgroundColor: "transparent",
-                            width: "100%",
-                            padding: "10px"
-                        }} type="password" placeholder="비밀번호" />
+                    <label className={styles.inputLabel}>
+                        <div className={styles.icon}>🔑</div>
+                        <input className={styles.inputField} type="password" placeholder="비밀번호 확인" />
                     </label>
-                    <label style={{ display: "flex", alignItems: "center", border: "1px solid #D3D3D3", height: "45px", margin: "10px 0" }}>
-                        <div style={{ padding: "5px", margin:"5px" }}>🔑</div>
-                        <input style={{
-                            border: "none",
-                            backgroundColor: "transparent",
-                            width: "100%",
-                            padding: "10px"
-                        }} type="password" placeholder="비밀번호 확인" />
+                    <label className={styles.inputLabel}>
+                        <div className={styles.icon}>👤</div>
+                        <input className={styles.inputField} type="text" placeholder="이름" />
                     </label>
-                    <label style={{ display: "flex", alignItems: "center", border: "1px solid #D3D3D3", height: "45px", margin: "10px 0" }}>
-                        <div style={{padding: "5px", margin:"5px" }}>👤</div>
-                        <input style={{
-                            border: "none",
-                            backgroundColor: "transparent",
-                            width: "100%",
-                            padding: "10px"
-                        }} type="text" placeholder="이름" />
+                    <label className={styles.inputLabel}>
+                        <div className={styles.icon}>🗓️</div>
+                        <input className={styles.inputField} type="tel" placeholder="생년월일" />
                     </label>
-                    <label style={{ display: "flex", alignItems: "center", border: "1px solid #D3D3D3", height: "45px", margin: "10px 0" }}>
-                        <div style={{padding: "5px", margin:"5px" }}>🗓️</div>
-                        <input style={{
-                            border: "none",
-                            backgroundColor: "transparent",
-                            width: "100%",
-                            padding: "10px"
-                        }} type="tel" placeholder="생년월일" />
-                    </label>
-                    <label style={{ display: "flex", alignItems: "center", border: "1px solid #D3D3D3", height: "45px", margin: "10px 0" }}>
-                        <div style={{padding: "5px", margin:"5px" }}>❌</div>
-                        <input style={{
-                            border: "none",
-                            backgroundColor: "transparent",
-                            width: "100%",
-                            padding: "10px"
-                        }} type="tel" placeholder="제외, 알러지음식" />
+                    <label className={styles.inputLabel}>
+                        <div className={styles.icon}>❌</div>
+                        <input className={styles.inputField} type="tel" placeholder="제외, 알러지음식" />
                     </label>
                 </div>
-                <div style={{display: "flex", alignItems: "center", justifyContent:"center"}}>
-                    <button style={{margin:"10px", padding:"5px"}}>취소</button>
-                    <button style={{margin:"10px", padding:"5px"}}>회원가입</button>
+                <div className={styles.buttonContainer}>
+                    <button className={styles.button}>취소</button>
+                    <button className={styles.button}>회원가입</button>
                 </div>
             </div>
         </div>
